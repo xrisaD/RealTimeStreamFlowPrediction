@@ -1,0 +1,13 @@
+hopsworks==3.0.5
+hsfs==3.0.5
+hsml==3.0.3
+joblib==1.2.0
+matplotlib==3.6.2
+modal==0.4.1
+modal_client==0.44.601
+pandas==1.5.2
+plotly==5.11.0
+python-dotenv==0.21.0
+requests==2.28.1
+scikit_learn==1.2.0
+xgboost==1.7.2

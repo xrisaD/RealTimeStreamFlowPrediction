@@ -1,0 +1,8 @@
+hopsworks
+joblib
+streamlit
+pandas
+numpy
+folium
+streamlit_folium
+python-dotenv
