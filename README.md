@@ -34,7 +34,7 @@ The F1-score that we got at the 2nd version of XGBoost is X.
 
 ## Bonus
 1. Parallel Hyperparameter Tuning: Parallel Hyperparameter Tuning is used to decide on the hyperparameters of XGBoost
-2. Multiple days forecast: The Recursive Multi-step Forecast technique is used to predict the streamflow for the next 6 days.
+2. Multiple days forecast: The Recursive Multi-step Forecast technique is used to predict the streamflow for the next 7 days.
 3. Tests using pytest: We have refactor the code into functions and tested  them using pytest tests.
 4. Batch Inference Pipeline
 5. Monitor UI: A monitor UI was implemented to monitor the predictions. The UI provides predictions for historical data for the last days and future predictions.
