@@ -1,6 +1,9 @@
 # Real-time Streamflow Predictions
 This service provides Streamflow predictions based on the weather for 3 locations in Sweden: Abisko, Spånga and Uppsala.
 It consists of a Feature Pipeline and a Training Pipeline which runs on Modal as Serverless Functions. The Training Pipeline performs Parallel Hyperparameter tuning for XGBoost. A Batch Inference pipeline has also been implemented to predict and create diagrams. Moreover, our service provides a UI with a map with the future predictions as well as a monitor UI. 
+
+<img src="images/system.png" al="image2" width="700"/>
+
 ## Members 
 * Olivia Höft 
 * Chrysoula Dikonimaki
@@ -30,11 +33,10 @@ Then the set of hyperparameters that gives us the best score in the test data is
 
    
 The second pipeline performed better, so it was selected and deployed to Modal as a serverless function to run every 7 days.
-The F1-score that we got at the 2nd version of XGBoost is X.
 
 ## Bonus
 1. Parallel Hyperparameter Tuning: Parallel Hyperparameter Tuning is used to decide on the hyperparameters of XGBoost
-2. Multiple days forecast: The Recursive Multi-step Forecast technique is used to predict the streamflow for the next 7 days.
+2. Multiple days forecast: The Recursive Multi-step Forecast technique is used to predict the streamflow for the next 6 days.
 3. Tests using pytest: We have refactor the code into functions and tested  them using pytest tests.
 4. Batch Inference Pipeline
 5. Monitor UI: A monitor UI was implemented to monitor the predictions. The UI provides predictions for historical data for the last days and future predictions.
