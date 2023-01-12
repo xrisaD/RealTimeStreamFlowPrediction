@@ -33,12 +33,14 @@ Then the set of hyperparameters that gives us the best score in the test data is
 2. `training-pipeline-3.py`: XGBoost performed better when we were doing experiments offline, so it was selected and deployed to Modal as a serverless function to run every 7 days on the new data that was generated the latest 7 days.
 
 ## Bonus
-1. Parallel Hyperparameter Tuning: Parallel Hyperparameter Tuning is used to decide on the hyperparameters of XGBoost
-2. Multiple days forecast: The Recursive Multi-step Forecast technique is used to predict the streamflow for the next 6 days.
-3. Tests using pytest: We have refactor the code into functions and tested  them using pytest tests.
-4. Batch Inference Pipeline
-5. Monitor UI: A monitor UI was implemented to monitor the predictions. The UI provides predictions for historical data for the last days and future predictions.
-6. Diagrams for a better user experience
+1. Multipe Models were tried: Gradient Boost Regressor and XGBoost Regressor.
+2. Parallel Hyperparameter Tuning: Parallel Hyperparameter Tuning is used to decide on the hyperparameters of XGBoost
+3. Multiple days forecast: The Recursive Multi-step Forecast technique is used to predict the streamflow for the next 6 days.
+4. Training Pipeline that is retrained every 7 days on the latest data 
+5. Tests using pytest: We have refactor the code into functions and tested them using pytest tests.
+6. Batch Inference Pipeline
+7. Monitor UI: A monitor UI was implemented to monitor the predictions. The UI provides predictions for historical data for the last days and future predictions.
+8. Diagrams for a better user experience
 
 
 ## Screenshots & Description
