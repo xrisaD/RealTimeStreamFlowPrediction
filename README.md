@@ -30,9 +30,7 @@ Two training pipelines were developed.
 2. `training-pipeline-2.py`: This pipeline performs Parallel Hyperparameter Tuning on an XGBoost Regressor. 
 This has been done by running a separate serverless function for each set of hyperparameters.
 Then the set of hyperparameters that gives us the best score in the test data is used to train the XGBoost Regressor on the whole dataset.
-
-   
-The second pipeline performed better, so it was selected and deployed to Modal as a serverless function to run every 7 days.
+2. `training-pipeline-3.py`: XGBoost performed better when we were doing experiments offline, so it was selected and deployed to Modal as a serverless function to run every 7 days on the new data that was generated the latest 7 days.
 
 ## Bonus
 1. Parallel Hyperparameter Tuning: Parallel Hyperparameter Tuning is used to decide on the hyperparameters of XGBoost
@@ -69,6 +67,10 @@ The training pipeline that runs on Modal every 7 days as a serverless function a
 
 <img src="images/train-1.png" al="image2" width="700"/>
 <img src="images/train-2.png" al="image2" width="700"/>
+
+
+Parallel Hyperparameter tuning on Modal: 
+
 <img src="images/train-3.png" al="image2" width="700"/>
 
 
